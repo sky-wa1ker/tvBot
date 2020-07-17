@@ -40,9 +40,9 @@ async def help(ctx):
     embed.set_thumbnail(url="https://i.ibb.co/V9y2wh1/ezgif-3-d878dd47b3b4.png")
     embed.add_field(name="tvBot help page.", value="Commands and basic info: ", inline=True)
     embed.add_field(name="tv!ping", value="Check latency.", inline=False)
-    embed.add_field(name="tv!movie", value="Search for a movie.", inline=False)
-    embed.add_field(name="tv!tvshow", value="Search for a TV show.", inline=False)
-    embed.add_field(name="tv!person", value="Search for an actor or actress.", inline=False)
+    embed.add_field(name="tv!movie {movie name}", value="Search for a movie.", inline=False)
+    embed.add_field(name="tv!tvshow {tv show name}", value="Search for a TV show.", inline=False)
+    embed.add_field(name="tv!person {actor name}", value="Search for an actor or actress.", inline=False)
     embed.set_footer(text="Talk to the developer - Sam Cooper#9490")
     await ctx.send(embed=embed)
 
